@@ -7,7 +7,14 @@ cask "minisip" do
   desc "Легкий нативний macOS SIP-клієнт"
   homepage "https://github.com/seishio/homebrew-minisip"
 
+  auto_updates true
+
   app "MiniSIP.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/MiniSIP.app"]
+  end
 
   zap trash: [
     "~/Library/Preferences/com.alex.minisip.plist",

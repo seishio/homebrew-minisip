@@ -1,6 +1,6 @@
 cask "minisip" do
-  version "0.1.2"
-  sha256 "94279d2c89fcaca383d799eb14bbde8cca9885a809edf4f23978cda0df56c5cd"
+  version "0.1.3"
+  sha256 "d4e4f4285d88e0bb3c50f9531bdc989b3e8d3c4f5a6ec84972ab5dc5dcc24202"
 
   url "https://github.com/seishio/homebrew-minisip/releases/download/v#{version}/MiniSIP.zip"
   name "MiniSIP"
